@@ -1,0 +1,36 @@
+{
+  "section": "3.1 Comparative Analysis of Model Performance",
+  "evaluation_set": "Frozen 77/23 random holdout",
+  "n_train": 15400,
+  "n_test": 4600,
+  "test_class_balance": {
+    "class_0_not_flooded": 2300,
+    "class_1_flooded": 2300
+  },
+  "classification_threshold": 0.5,
+  "reported_metrics": [
+    "accuracy",
+    "ROC-AUC",
+    "class-wise precision",
+    "class-wise recall",
+    "class-wise F1"
+  ],
+  "auc_ci": {
+    "method": "stratified percentile bootstrap",
+    "repetitions": 2000,
+    "confidence_level": 0.95,
+    "random_seed": 42,
+    "note": "Tella et al. report 95% AUC confidence intervals, but the cited Results/Accuracy Assessment text does not specify the exact CI estimator. This project therefore uses a documented stratified percentile bootstrap."
+  },
+  "mcnemar": {
+    "method": "exact two-sided McNemar test via binomial test",
+    "paired_unit": "same random-holdout sample",
+    "note": "Compares whether two models differ in their correct/incorrect classification decisions on the same holdout observations."
+  },
+  "model_files": {
+    "LR": "models\\lr_union_random.joblib",
+    "RF": "models\\rf_union_random.joblib",
+    "XGBoost": "models\\xgb_union_random.joblib",
+    "CatBoost": "models\\catboost_union_random.cbm"
+  }
+}

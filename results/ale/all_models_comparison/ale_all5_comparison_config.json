@@ -1,0 +1,33 @@
+{
+  "models": [
+    "LR",
+    "RF",
+    "XGBoost",
+    "CatBoost",
+    "TabPFN"
+  ],
+  "nonlinear_models": [
+    "RF",
+    "XGBoost",
+    "CatBoost",
+    "TabPFN"
+  ],
+  "features": [
+    "aspect",
+    "curvature",
+    "distdrainage",
+    "distriver",
+    "distroads",
+    "elevation",
+    "ndvi",
+    "rainfall_frequency",
+    "slope",
+    "twi"
+  ],
+  "central_curve_used_for_comparison": "ale_mean",
+  "interpolation_points": 401,
+  "interpolation_rule": "Linear interpolation only within the common observed x-range; no extrapolation. Used only for cross-model shape/sign metrics.",
+  "plot_rule": "Each model is plotted at its original ALE bin_value coordinates.",
+  "zero_crossing_warning": "Zero crossings are descriptive model-response transitions, not causal or physical thresholds. Multiple crossings are retained.",
+  "tabpfn_note": "TabPFN uncertainty uses cached-local-effect bootstrap rather than repeated GPU model inference. Central slope ALE was separately validated against scikit-explain."
+}

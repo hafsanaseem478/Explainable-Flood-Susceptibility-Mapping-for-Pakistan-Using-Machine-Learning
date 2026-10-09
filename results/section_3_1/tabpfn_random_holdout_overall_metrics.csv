@@ -1,0 +1,2 @@
+model,accuracy,roc_auc,auc_ci_lower_95,auc_ci_upper_95,threshold,n_test,n_class_0,n_class_1
+TabPFN,0.8956521739130435,0.9523308128544423,0.946151606805293,0.9581447873345936,0.5,4600,2300,2300

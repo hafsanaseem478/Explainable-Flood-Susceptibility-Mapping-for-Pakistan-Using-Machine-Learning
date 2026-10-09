@@ -1,0 +1,7 @@
+model_a,model_b,a_correct_b_wrong,a_wrong_b_correct,discordant_total,p_exact_two_sided
+LR,RF,113,460,573,1.289233196654403e-50
+LR,XGBoost,148,491,639,7.338421118253867e-44
+LR,CatBoost,123,470,593,1.0101190162108833e-48
+RF,XGBoost,90,86,176,0.8211772774694062
+RF,CatBoost,75,75,150,1.0
+XGBoost,CatBoost,69,73,142,0.8013390218104018

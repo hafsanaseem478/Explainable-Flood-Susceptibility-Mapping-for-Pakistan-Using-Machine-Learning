@@ -1,0 +1,27 @@
+{
+    "method": "first-order ALE",
+    "reference": "Tella et al. (2026)",
+    "dataset": "Data\\samples\\training_samples_union_with_splits.csv",
+    "data_subset": "random training split only",
+    "training_n": 15400,
+    "features": [
+        "aspect",
+        "curvature",
+        "distdrainage",
+        "distriver",
+        "distroads",
+        "elevation",
+        "ndvi",
+        "rainfall_frequency",
+        "slope",
+        "twi"
+    ],
+    "n_bins": 20,
+    "n_bootstrap": 150,
+    "subsample": 10000,
+    "random_seed": 42,
+    "class_index": 1,
+    "estimator_output": "probability",
+    "library": "scikit-explain",
+    "library_version": "1.0.0"
+}

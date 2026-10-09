@@ -1,0 +1,6 @@
+model,display_name,tn,fp,fn,tp
+LR,Logistic Regression,1661,639,319,1981
+RF,Random Forest,1936,364,247,2053
+XGBoost,XGBoost,1950,350,265,2035
+CatBoost,CatBoost,1939,361,250,2050
+TabPFN,TabPFN,2030,270,210,2090

@@ -1,0 +1,17 @@
+{
+  "model": "TabPFN",
+  "tabpfn_version": "9.0.0",
+  "random_state": 42,
+  "evaluation_set": "Frozen 77/23 random holdout",
+  "n_train": 15400,
+  "n_test": 4600,
+  "test_class_0_background": 2300,
+  "test_class_1_historical_flood": 2300,
+  "classification_threshold": 0.5,
+  "auc_ci_method": "stratified percentile bootstrap",
+  "auc_ci_bootstrap_repetitions": 2000,
+  "auc_ci_random_seed": 42,
+  "dataset_sha256": "52c7570811f5c076f2def7205baec16382463653050ac5fdd093472ba1dec4d4",
+  "expected_baseline_auc": 0.9523,
+  "observed_auc": 0.9523308128544423
+}

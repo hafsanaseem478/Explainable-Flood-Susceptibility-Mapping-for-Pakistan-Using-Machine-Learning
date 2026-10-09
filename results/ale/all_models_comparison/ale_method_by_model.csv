@@ -1,0 +1,6 @@
+model,ale_method,bootstrap,status
+LR,scikit-explain,150 model-evaluation bootstrap replicates,exact Tella-style protocol
+RF,scikit-explain,150 model-evaluation bootstrap replicates,exact Tella-style protocol
+XGBoost,scikit-explain,150 model-evaluation bootstrap replicates,exact Tella-style protocol
+CatBoost,scikit-explain,150 model-evaluation bootstrap replicates,exact Tella-style protocol
+TabPFN,cached local effects,150 within-bin cached-local-effect bootstrap replicates,same ALE design; optimized implementation
