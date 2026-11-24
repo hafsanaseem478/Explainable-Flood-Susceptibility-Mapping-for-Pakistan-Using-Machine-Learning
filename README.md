@@ -49,10 +49,5 @@ Completed first-order ALE analyses for LR, RF, XGBoost, and CatBoost used the tr
 
 ![CatBoost first-order ALE curves for the ten retained predictors](figures/historical_union_ale_catboost.png)
 
-## Limitations
-
-- Training and test points share geographic areas. The random holdout and point-level uncertainty estimates do not establish performance in unseen regions.
-- The rainfall-frequency layer overlaps the historical event period, so the evaluation is retrospective.
-- Nationwide susceptibility maps and class-area summaries remain pending. The model scores represent relative susceptibility rather than annual flood probability.
 
 ALE methodology was adapted from Tella et al. (2026), *Advancing Flood Susceptibility Mapping with Explainable AI: A Novel Application of Accumulated Local Effects (ALE)*. [Reference](https://doi.org/10.1007/s11269-025-04430-0)
